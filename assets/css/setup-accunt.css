@@ -1,0 +1,144 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* global style   */
+
+a {
+    list-style: none;
+    color: black;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 5px;
+}
+
+p {
+    text-align: center;
+    font-size: 16px;
+    padding: 5px;
+}
+
+button {
+    background-color: #fa2323;
+    /* padding: 5px; */
+}
+
+.showcase-top {
+    position: relative;
+    z-index: 2;
+    height: 90px;
+    border-bottom: 1px solid #cfcbcb;
+}
+
+.showcase-top img {
+    width: 170px;
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    margin-left: 0;
+}
+
+.showcase-top a {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+    color: black;
+    list-style: none;
+}
+
+.showcase-top a :hover {
+    text-decoration: underline;
+    font-size: 16px;
+    color: black;
+}
+
+
+/* finish setup */
+
+.finish-setup {
+    padding: 30px;
+}
+
+.finish-setup .img {
+    text-align: center;
+    margin: 30px;
+    margin-top: 50px;
+    width: 100%;
+    /* cursor: none; */
+}
+
+.finish-setup button a {
+    color: white;
+    text-decoration: none;
+}
+
+.span {
+    display: block;
+    margin-left: 40%;
+    padding: 20px;
+}
+@media (max-width: 960px) {
+    .header{
+        width: 100%;
+
+    }
+    .showcase-top img {
+        width: 30%;
+        top: 30%;
+        left: 5%;
+        transform: translate(0);
+    }
+    footer .footer-cols {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    button{
+        background-color: #fa2323;
+        padding: 15px;
+        margin: 10px;
+        border: none;
+    }
+  
+}
+
+
+/* footer style  */
+
+.footer {
+    max-width: 80%;
+    margin: 3rem auto;
+    overflow: auto;
+    /* background-color: rgba(59, 63, 62, 0); */
+    border-top: 1px solid #cfcbcb;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li {
+    line-height: 1.9rem;
+}
+
+.footer a {
+    color: #747070;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
